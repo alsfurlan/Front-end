@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Título da Página</title>
+        <style>
+            .destaque {
+                color: red;
+            }
+        </style>
+        
+    </head>
+    <body>
+        <h1 id="destaque" class="destaque">Título 1</h1>
+        <p>Parágrafo 1</p>
+        <script>
+            var destaque = document.getElementById("destaque");
+            destaque.onclick = function() {
+                alert('Cliquei no título!');
+            };
+            /*destaque.addEventListener("click", function() {
+                alert('Cliquei no título!');
+            });*/
+        </script>
+    </body>
+</html>
